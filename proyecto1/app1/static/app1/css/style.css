@@ -1,0 +1,318 @@
+/*General*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#FFF9F2;
+    color:#5A2E0C;
+    transition:0.3s;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Fredoka', sans-serif;
+}
+/*Barra de navegación*/
+.navbar{
+    background-color:#F5F5F5 !important;
+    transition:0.3s;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand{
+    color:#5A2E0C !important;
+}
+
+/*Carrusel inicio*/
+#Inicio .carousel-item {
+    max-height: 600px;
+}
+#Inicio .carousel-caption h1,
+.carousel-caption h2 {
+
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #fff8e7;
+}
+
+#Inicio .carousel-caption {
+    position: absolute;
+    left: 8%;
+    right: auto;
+    bottom: 50%;
+    transform: translateY(50%);
+    text-align: left;
+    width: 45%;
+}
+#Inicio .carousel-item .carousel-caption.carousel-caption-right {
+    left: auto;
+    right: 8%;
+    text-align: right;
+}
+#Inicio .carousel-caption p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.9rem;
+    color: #fff8e7;
+}
+#Inicio .carousel-caption a {
+    background-color:#f07a1f;
+}
+
+/*Productos*/
+#Productos {
+    background-color: #FFF9F2;
+    color: #5A2E0C;
+    transition: 0.3s;
+}
+
+#Productos .card {
+    background-color: #FFFFFF;
+    color: #5A2E0C;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+#Productos .card:hover {
+    transform: translateY(-5px);
+}
+
+#Productos .producto-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#Productos .card-title {
+    color: #5A2E0C;
+}
+
+#Productos .card-text {
+    color: #6B5140;
+}
+/*Nosotros*/
+#Nosotros .container-fluid {
+    background-color:#FFF3E4;
+    color:#5A2E0C;
+    transition:0.3s;
+}
+#Nosotros .col img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+#Nosotros h3{
+    font-size: 40px;
+    margin-bottom: 50px
+}
+/*Reseñas*/
+#Reseñas .container-fluid {
+    background-color:#EEF7FC;
+    transition:0.3s;
+}
+#Reseñas .card {
+    background-color:#F5F5F5;
+    color:#5A2E0C;
+    margin: 0 20px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 0;
+}
+#Reseñas .card-img-top {
+    max-width: 100px;
+    border-radius: 50px;
+    margin: 15px auto 0;
+    box-shadow: 0 8px 20px -4px #95abbb;
+    width: 100px;
+    height: 100px;
+}
+#Reseñas h4 {
+    color: #f07a1f;
+    font-size: 21px;
+    line-height: 1.3;
+}
+#Reseñas h4 span {
+    font-size: 20px;
+
+}
+#Reseñas p{
+    font-size: 18px;
+    color: #555;
+    padding-bottom: 15px;
+}
+#Reseñas .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -60px
+}
+/*Formulario*/
+#FormularioContacto {
+    background-color: #FFF3E4;
+    color: #5A2E0C;
+    transition: 0.3s;
+}
+
+#FormularioContacto form {
+    background-color: #FFFFFF;
+    color: #5A2E0C;
+}
+
+
+/*Footer*/
+footer {
+    background-color:#5A2E0C;
+    color:#F5F5F5;
+}
+#Contactos h5 {
+    font-size:1.2rem ;
+}
+#Contactos p, #Contactos a {
+    font-size: 0.95rem;
+    color: #F5F5F5;
+    text-decoration: none;
+}
+#Contactos h4 {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+/*Botón que va para arriba*/
+.go-top-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: -1;
+}
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: #f07a1f;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    z-index: -1;
+
+}
+.go-top-button i{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    transition: .2s;
+
+}
+.show {
+    z-index: 10;
+}
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 3rem;
+    height: 3rem;
+    z-index: 11;
+}
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+    100%{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+/*Tema ocuro*/
+body.modo-oscuro{
+    background-color:#1C1410;
+    color:#F5E8D8;
+}
+
+body.modo-oscuro .navbar{
+    background-color:#251A14 !important;
+}
+
+body.modo-oscuro .navbar .nav-link,
+body.modo-oscuro .navbar .navbar-brand{
+    color:#F5E8D8 !important;
+}
+
+body.modo-oscuro #Productos {
+    background-color: #1C1410;
+    color: #F5E8D8;
+}
+
+body.modo-oscuro #Productos .card {
+    background-color: #332218;
+    color: #F5E8D8;
+}
+
+body.modo-oscuro #Productos .card-title {
+    color: #F5A300;
+}
+
+body.modo-oscuro #Productos .card-text {
+    color: #F5E8D8;
+}
+
+body.modo-oscuro #Nosotros{
+    background-color:#2A1B12;
+    color:#F5E8D8;
+}
+
+
+body.modo-oscuro #Reseñas{
+    background-color:#241913;
+}
+body.modo-oscuro #Reseñas h3{
+    color:#241913;
+}
+
+body.modo-oscuro #Reseñas .card{
+    background-color:#332218;
+    color:#F5E8D8;
+}
+body.modo-oscuro #Reseñas p{
+    color: white;
+
+}
+
+body.modo-oscuro footer{
+    background-color:#120C09;
+    color:#F5E8D8;
+}
+body.modo-oscuro #FormularioContacto {
+    background-color: #2A1B12;
+    color: #F5E8D8;
+}
+body.modo-oscuro #FormularioContacto form {
+    background-color: #251A14;
+    color: #F5E8D8;
+    border: 1px solid #332218;
+}
+
+body.modo-oscuro #FormularioContacto .form-control {
+    background-color: #1C1410;
+    border-color: #332218;
+    color: #F5E8D8;
+}
+
+body.modo-oscuro #FormularioContacto .form-control:focus {
+    background-color: #1C1410;
+    color: #F5E8D8;
+    border-color: #f07a1f;
+}
+ 
+

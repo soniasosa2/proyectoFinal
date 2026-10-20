@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block titulo %}{% endblock titulo %}
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <!--Menú de navegación-->
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://rosariocentral.com/">
+                    <img src="{% static 'image/chipania_fondoclaro.png' %}" alt="LogoChipania" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Productos">Productos</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Nosotros">Nosotros</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contactos">Reseñas</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contactos">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="tema-btn" class="btn btn-outline-warning">☀️</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        {% block contenido %} {% endblock contenido %}
+
+    </main>
+
+    <!--Comienzo del footer-->
+    <footer id="Contactos">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col px-1 text-center">
+                    <h5>Contactanos</h5>
+                    <a href="https://wa.me/qr/T2AU7KYEAIXPL1"><i class="bi bi-whatsapp"></i> 341-3474958</a>
+                </div>
+                <div class="col px-1 text-center">
+                    <h5>Email</h5>
+                    <p><i class="bi bi-envelope"></i> chipania26@gmail.com</p>
+                </div>
+                <div class="col px-1 text-center">
+                    <h5>Ubicación </h5>
+                    <p><i class="bi bi-geo-alt"></i> Capitán Bermúdez</p>
+                </div>
+                <div class="col px-1 text-center">
+                    <h5>Atendemos</h5>
+                    <p><i class="bi bi-alarm"></i> Todos los dias<br> 9:30am a 7:30pm
+                    </p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="https://www.instagram.com/chipania.cb?igsh=MWllaDg3aThrcjBseg=="><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1KxpuPFGnf/"><i class="bi bi-facebook"></i></a>
+                    <h4>© 2026 Chipania - Todos los derechos reservados</h4>
+                
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--Botón que va para arriba-->
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="bi bi-arrow-up-short"></i>
+        </div>
+    </div>
+
+
+
+    <script src="{% static 'app1/js/main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

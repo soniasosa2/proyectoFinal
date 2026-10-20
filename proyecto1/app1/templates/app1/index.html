@@ -1,0 +1,257 @@
+{% extends 'app1/componentes/plantilla.html' %}
+
+{% block titulo %}
+    <title>Chipania</title>
+{% endblock titulo %}
+
+{% block contenido %} 
+        {% load static %}
+        <!--Sección Nuestros Productos-->
+        <section id="Productos" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h3 class="fw-bold">Nuestros Productos</h3>
+                        <p>En Chipania elaboramos nuestros productos de manera artesanal, utilizando ingredientes seleccionados y cuidando cada detalle en cada preparación.
+                        </p>
+                        <p>Preparamos todo fresco para que puedas disfrutar ese sabor casero que nos caracteriza. Porque creemos que no hay nada mejor que recibir algo rico, recién hecho y calentito.
+                        </p> 
+                        <p>Ya sea para acompañar unos mates, compartir una merienda o simplemente darte un gustito, tenemos algo para cada momento.
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="{% static 'image/ProductoChipa.jpeg' %}" class="card-img-top producto-img" alt="Chipá casero">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Chipá Casero</h5>
+                                        <p class="card-text">Elaborado con fécula de mandioca y una combinación de quesos que le dan su sabor y textura característicos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="/static/image/ProductoCongelados.jpeg" class="card-img-top producto-img" alt="Chipá congelado">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Chipá Congelado</h5>
+                                        <p class="card-text">Nuestro chipá listo para llevar al horno y disfrutar recién hecho cuando quieras.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="/static/image/ProductoTorta.jpeg" class="card-img-top producto-img" alt="Tortas fritas">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Tortas Fritas</h5>
+                                        <p class="card-text">Caseras, doraditas y recién hechas, perfectas para acompañar unos mates y compartir algo rico.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-6">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="/static/image/ProductoPan.jpeg" class="card-img-top producto-img" alt="Pan casero">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Pan Casero</h5>
+                                        <p class="card-text">Pan casero elaborado artesanalmente, disponible con o sin chicharrón, para disfrutar fresco y calentito.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!--Sección Sobre nosotros-->
+        <section id="Nosotros">
+            <div class="container-fluid py-5 ">
+                <h3 class="text-center fw-bold mb-5">Sobre Chipania</h3>
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-center mb-4 mb-md-0">
+                        <img src="/static/image/Familia.jpeg" class="img-fluid rounded shadow" alt="FotoFamilia">
+                    </div>
+                    <div class="col-md-7">
+                        <p>Chipania nació con una idea simple: crear pequeños momentos de felicidad a través de algo tan sencillo como un producto casero recién hecho. Nos gusta pensar que un buen chipá, unas tortas fritas o un pan calentito pueden transformar una merienda común en ese pequeño gustito que uno estaba necesitando.
+Preparamos nuestros productos de manera artesanal, cuidando cada detalle y buscando siempre ofrecer ese sabor casero que nos recuerda a compartir algo rico con quienes queremos. Seleccionamos nuestros ingredientes y trabajamos cada elaboración con dedicación para que nuestros productos lleguen a vos frescos, ricos y hechos con mucho cariño.
+Porque para nosotros Chipania no es solamente vender algo rico: es acompañar tus momentos y regalarte un pequeño mimo en cualquier momento del día. 🧀💛 </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Sección de las Reseñas-->
+        <section id="Reseñas">
+           
+            <div class="container-fluid py-5 px-3">
+                <h3 class="text-center fw-bold">Opiniones de nuestros clientes</h3>
+
+                <div id="carouselResenas" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselResenas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselResenas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselResenas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!--Reseña primer conjunto-->
+                
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top"   src="/static/image/Reseña9.avif" alt="">
+                                        <div class="card-body">
+                                            <h4> — C. N.<br> <span>⭐⭐⭐⭐⭐</span></h4>
+                                            <p class="card-text">"riquisimoooos 😍😍😍 clienta nueva jaja"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top"   src="/static/image/Reseña8.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4>— U. A. <br> <span>⭐⭐⭐⭐⭐</span></h4>
+                                            <p class="card-text">"Riquísimos la verdad muyyyy, nos quedamos cortas jajaj Pero hasta ahora los mejores que probe 🙌🙌🙌"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top"   src="/static/image/Reseña7.jfif" alt="">
+                                        <div class="card-body">
+                                            <h4>— R. R.<br> <span>⭐⭐⭐⭐⭐</span></h4>
+                                            <p class="card-text">"Riquísimos, gracias!!! Riquísimos, recién llego a casa y tomar unos mates con chipa es la gloria! 🤞🏼🫶🏼 "</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>  
+                        </div>
+
+                        <!--Reseñas segundo conjunto-->
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top"   src="/static/image/Reseña1.webp" alt="">
+                                        <div class="card-body">
+                                            <h4>— C. N. <br> <span>⭐⭐⭐⭐⭐</span></h4>
+                                            <p class="card-text">"Riquísimos tus chipas Muchísimas gracias 😊 "</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top"   src="/static/image/Reseña2.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4>— U. A. <br> <span>⭐⭐⭐⭐⭐</span></h4>
+                                            <p class="card-text">"Holaaa!!Riquísimos los chipá!! 😍👏👏👏Y estaban calentitos y todo!! "</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top"   src="/static/image/Reseña3.webp" alt="">
+                                        <div class="card-body">
+                                            <h4>— R. R. <br> <span>⭐⭐⭐⭐⭐</span></h4>
+                                            <p class="card-text">" Riquísimos !!!! Vamos a ser compradores compulsivos ! Ajja"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>                            
+                        </div>
+
+                        <!--Reseñas tercer conjunto-->
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top"   src="/static/image/Reseña4.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4>— C. N. <br> <span>⭐⭐⭐⭐⭐</span></h4>
+                                            <p class="card-text">"Estaban buenísimos.! Te voy a seguir comprando.!Muchas Graaaciaaas 🫶✨️ "</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top"   src="/static/image/Reseña5.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4>— U. A. <br> <span>⭐⭐⭐⭐⭐</span></h4>
+                                            <p class="card-text">"Los chipas son fantásticos. No pierdan esa calidad de producto porque lo es todo. Felicitaciones "</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center">
+                                        <img class="card-img-top"   src="/static/image/Reseña6.webp" alt="">
+                                        <div class="card-body">
+                                            <h4>— R. R. <br> <span>⭐⭐⭐⭐⭐</span></h4>
+                                            <p class="card-text">"Excelente producto Te felicito!!! "</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+        <!--Sección del formulario-->
+        <section id="FormularioContacto" class="py-5">
+            <div class="container">
+                <h3 class="text-center fw-bold mb-2">Tu opinión nos ayuda a seguir creciendo 💛</h3>
+                <p class="text-center mb-4">En Chipania nos encanta saber qué pensás de nuestros productos. <br>Contanos cómo fue tu experiencia o escribinos si tenés alguna consulta, sugerencia o simplemente querés saludarnos.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <form id="formConsulta" class="p-4 rounded shadow-sm">
+
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="tucorreo@email.com">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Tu mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Contanos qué pensás de Chipania o escribinos tu consulta..."></textarea>
+                            </div>
+                            
+                            <!--Para mensajes-->
+                            <div id="alertaForm" class="alert d-none" role="alert"></div>
+                            <button type="submit" class="btn w-100 fw-bold text-white" style="background-color: #f07a1f;">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock contenido %}
